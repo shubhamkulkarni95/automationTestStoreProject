@@ -6,11 +6,13 @@
   "scripts": {
     "test": "cypress open",
     "cypress": "cypress open",
-    "cy:run": "cypress run"
+    "cy:run:headed": "cypress run --headed",
+    "cy:run:headless": "cypress run --headless"
   },
   "author": "Shubham Kulkarni",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^12.17.4"
+    "cypress": "^12.17.4",
+    "cypress-mochawesome-reporter": "^3.5.1"
   }
 }

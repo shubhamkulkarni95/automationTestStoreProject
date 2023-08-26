@@ -5,17 +5,17 @@ import { successPage } from "../../pages/successPage/successPage"
 
 describe("Home Page E2E Testing",()=>{
     before("Login",()=>{
-        cy.visit("/index.php?rt=account/login")
+        cy.visitURL("/index.php?rt=account/login")
         loginPage.verifyLoginNamelbl("Login Name:")
         loginPage.verifyPasswordlbl("Password:")
-        loginPage.enterLoginNameTxt("Test001")
-        loginPage.enterPasswordTxt("Test@123")
+        loginPage.enterLoginNameTxt(Cypress.env('username'))
+        loginPage.enterPasswordTxt(Cypress.env('password'))
         loginPage.clickLoginBtn()
         loginPage.verifyPageURL('/index.php?rt=account/account') 
     })
 
     it("Select Tshirt from Apparel and accessories",()=>{
-        cy.visit("/index.php?rt=account/account")
+        cy.visitURL("/index.php?rt=account/account")
         homePage.clickOptionTshirtDDLOption()
         homePage.selectPerticularProductFromAllProductTxt('Designer Men Casual Formal Double Cuffs Grandad Band Collar Shirt Elegant Tie')
         homePage.selectSizeDDL("Medium")
