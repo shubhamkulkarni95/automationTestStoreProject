@@ -28,7 +28,7 @@
   1. Take a pull from repository
   3. Open terminal in VSCode.
   4. Check whether are you on correct path or not. If you are on correct path then type "npm i"
-  - All dependency downloaded and added in package.json
+     - All dependency downloaded and added in package.json
   6. Also check is cypress install or not?
   7. If not then follow this document, https://docs.cypress.io/guides/getting-started/installing-cypress
   8. For running test cases in use following command,
