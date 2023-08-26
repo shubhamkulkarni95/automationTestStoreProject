@@ -1,0 +1,16 @@
+{
+  "name": "ecomautomationteststore",
+  "version": "1.0.0",
+  "description": "Ecommerce WebSite Demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open",
+    "cypress": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "author": "Shubham Kulkarni",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.17.4"
+  }
+}
